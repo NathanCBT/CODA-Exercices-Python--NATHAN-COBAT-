@@ -165,13 +165,19 @@ def exercice25():
     else :
         print(f"{nombre1} et {nombre2} ne sont pas dans l'ordre croissant")    
 
-
+def exercice26():
+    print("Exercice 26 : Divisible par 5")
+    nombre = int(input("Choisir un nombre"))
+    if nombre % 5 == 0 :
+        print(f"{nombre} est divisible par 5")
+    else :
+        print(f"{nombre} n'est pas divisible par 5")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "25":
-        exercice25()
+    if choix == "26":
+        exercice26()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
