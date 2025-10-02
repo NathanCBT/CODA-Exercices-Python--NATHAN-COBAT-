@@ -97,11 +97,18 @@ def exercice16():
     perimetre = carre * 4 
     print(f"L'aire = {perimetre} cm")
 
+def exercice17():
+    print("Exercice 17 : Conversion euros → dollars")
+    euro = int(input("Combien d'Euros voulez-vous convertir ?"))
+    dollars = euro * 1.17 
+    print(f"{euro} = {dollars}$")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "16":
-        exercice16()
+    if choix == "17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
