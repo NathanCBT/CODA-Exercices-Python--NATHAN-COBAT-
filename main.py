@@ -139,14 +139,22 @@ def exercice22():
     else : 
         print("Tu es Majeur")
 
+def exercice23():
+    print("Exercice 23 : Note validée ")
+    note = int(input("Quelle est ta note ?"))
+    if note >= 10 : 
+        print(f"{note} est validé")
+    else :
+        print(f"{note} n'est pas validé")    
+
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "22":
-        exercice22()
+    if choix == "23":
+        exercice23()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
