@@ -103,12 +103,20 @@ def exercice17():
     dollars = euro * 1.17 
     print(f"{euro} = {dollars}$")
 
+def exercice18():
+    print("Exercice 18 : Conversion minutes → secondes ")
+    minute = int(input("Combien de minutes voulez-vous convertir en secondes ?"))
+    seconde = minute * 60 
+    print(f"{minute} minutes = {seconde} secondes")
+
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "17":
-        exercice17()
+    if choix == "18":
+        exercice18()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
