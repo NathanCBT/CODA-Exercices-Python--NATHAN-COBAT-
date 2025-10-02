@@ -173,11 +173,21 @@ def exercice26():
     else :
         print(f"{nombre} n'est pas divisible par 5")
 
+def exercice27():
+    print("Exercice 27 : Catégorie d'âge")
+    age = int(input("Quel âge avez-vous"))
+    if age < 12 :
+        print("Vous êtes dans la catégorie enfant")
+    elif age < 18 :
+        print("Vous êtes dans la catégorie ado")
+    else :
+        print("Vous êtes dans la catégorie adulte")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "26":
-        exercice26()
+    if choix == "27":
+        exercice27()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
