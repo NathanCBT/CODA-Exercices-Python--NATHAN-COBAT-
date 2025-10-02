@@ -109,14 +109,20 @@ def exercice18():
     seconde = minute * 60 
     print(f"{minute} minutes = {seconde} secondes")
 
+def exercice19():
+    print("Exercice 19 : Prix TTC")
+    HTC = int(input("Combien d'Euros HTC voulez-vous conventir en TTC"))
+    TTC = HTC / 100 * 20 + HTC
+    print(f"Prix TTC = {TTC}")
+
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "18":
-        exercice18()
+    if choix == "19":
+        exercice19()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
