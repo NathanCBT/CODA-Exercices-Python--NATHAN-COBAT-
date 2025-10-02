@@ -29,22 +29,33 @@ def exercice6():
     print("Exercice 6 : Soustraction simple")
     nombre1 = int(input("Choisir un premier nombre"))
     nombre2 = int(input("Choisir un second nombre"))
-    somme = nombre1 - nombre2
+    soustraction = nombre1 - nombre2
     print(f"{nombre1} - {nombre2} = {somme}")
 
 def exercice7():
     print("Exercice 7 : Multiplication simple")
     nombre1 = int(input("Choisir un premier nombre"))
     nombre2 = int(input("Choisir un second nombre"))
-    somme = nombre1 * nombre2
+    addition = nombre1 * nombre2
     print(f"{nombre1} x {nombre2} = {somme}")
+
+def exercice8():
+    print("Exercice 8 : Division simple")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    if nombre2 <= 0:
+        print("Erreur : le dénominateur (nombre2) ne peut pas être 0")
+        return 
+    division = nombre1 / nombre2
+    print(f"{nombre1} / {nombre2} = {division}")
+    
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "7":
-        exercice7()
+    if choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
