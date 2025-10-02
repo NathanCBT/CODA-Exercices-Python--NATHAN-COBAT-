@@ -79,12 +79,18 @@ def exercice13():
     for i in range(5):
         print(f"{i}")
 
+def exercice14():
+    print("Exercice 14 : Table de 2")
+    table = int(input("Quelle table voulez-vous mutiplier"))
+    for i in range(1, 11):
+        print(f"{table} x {i} = {table * i}")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "13":
-        exercice13()
+    if choix == "14":
+        exercice14()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
