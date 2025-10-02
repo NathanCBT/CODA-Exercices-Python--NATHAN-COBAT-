@@ -30,7 +30,7 @@ def exercice6():
     nombre1 = int(input("Choisir un premier nombre"))
     nombre2 = int(input("Choisir un second nombre"))
     soustraction = nombre1 - nombre2
-    print(f"{nombre1} - {nombre2} = {somme}")
+    print(f"{nombre1} - {nombre2} = {soustraction}")
 
 def exercice7():
     print("Exercice 7 : Multiplication simple")
@@ -193,11 +193,26 @@ def exercice28():
     else : 
         print(f"{temp}° donc l'eau est en ébulition")
 
+def exercice29():
+    print("Exercice 29 : Mention au bac ")
+    note = int(input("Quelle note avez-vous obtenue au Bac ? "))
+    if note < 10 :
+        print(f"Votre note est de {note} vous êtes donc recalé")
+    elif note >= 10 : 
+        print(f"Votre note est de {note} c'est passable")
+    elif note >= 14 : 
+        print(f"Votre note est de {note} vous avez donc la mention Bien")
+    elif note >= 17 : 
+        print(f"Votre note est de {note} vous avez donc la mention Très bien")
+
+
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "28":
-        exercice28()
+    if choix == "29":
+        exercice29()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
