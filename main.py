@@ -25,11 +25,18 @@ def exercice5():
     somme = nombre1 + nombre2
     print(f"{nombre1} + {nombre2} = {somme}")
 
+def exercice6():
+    print("Exercice 6 : Soustraction simple")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    somme = nombre1 - nombre2
+    print(f"{nombre1} + {nombre2} = {somme}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "5":
-        exercice5()
+    if choix == "6":
+        exercice6()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
