@@ -145,16 +145,24 @@ def exercice23():
     if note >= 10 : 
         print(f"{note} est validé")
     else :
-        print(f"{note} n'est pas validé")    
+        print(f"{note} n'est pas validé")   
 
+def exercice24():
+    print("Exercice 24 : Le plus grand de deux")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    if nombre1 > nombre2 :
+        print(f"{nombre1} est plus grand que {nombre2}")
+    else :
+        print(f"{nombre2} est plus grand que {nombre1}")
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "23":
-        exercice23()
+    if choix == "24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
