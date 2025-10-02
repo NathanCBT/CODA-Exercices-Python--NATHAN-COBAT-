@@ -86,17 +86,22 @@ def exercice14():
         print(f"{table} x {i} = {table * i}")
 
 def exercice15():
-    print("Exercice 15 : Périmètre du carré")
+    print("Exercice 15 : Aire du carré")
     carre = int(input("De quelle longueure est le côté du carré en cm"))
     aire = carre * carre 
     print(f"L'aire = {aire} cm")
 
+def exercice16():
+    print("Exercice 15 : Périmètre du carré")
+    carre = int(input("De quelle longueure est le côté du carré en cm"))
+    perimetre = carre * 4 
+    print(f"L'aire = {perimetre} cm")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "15":
-        exercice15()
+    if choix == "16":
+        exercice16()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
