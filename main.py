@@ -48,14 +48,20 @@ def exercice8():
         return 
     division = nombre1 / nombre2
     print(f"{nombre1} / {nombre2} = {division}")
-    
+
+def exercice9():
+    print("Exercice 9 : Le carré d'un nombre")
+    nombre = int(input("Choisir un premier nombre"))
+    carre = nombre **2
+    print(f"{nombre}² = {carre}")
+
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "8":
-        exercice8()
+    if choix == "9":
+        exercice9()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
