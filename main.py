@@ -51,17 +51,23 @@ def exercice8():
 
 def exercice9():
     print("Exercice 9 : Le carré d'un nombre")
-    nombre = int(input("Choisir un premier nombre"))
+    nombre = int(input("Choisir un nombre"))
     carre = nombre **2
     print(f"{nombre}² = {carre}")
+
+def exercice10():
+    print("Exercice 10 : Le double d'un nombre")
+    nombre = int(input("Choisir un nombre"))
+    double = nombre * 2 
+    print(f"Le double de {nombre} = {double}")
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "9":
-        exercice9()
+    if choix == "10":
+        exercice10()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
