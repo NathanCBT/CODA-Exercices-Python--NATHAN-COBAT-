@@ -67,12 +67,18 @@ def exercice11():
     moitie = nombre / 2 
     print(f"La moitié de {nombre} = {moitie}")
 
+def exercice12():
+    print("Exercice 12 : Afficher 5 fois ")
+    message = (input("Quel message voulez-vous dire ?"))
+    for i in range(5):
+        print(f"{message}")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "11":
-        exercice11()
+    if choix == "12":
+        exercice12()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
