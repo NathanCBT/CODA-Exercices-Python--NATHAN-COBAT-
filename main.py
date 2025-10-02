@@ -115,14 +115,21 @@ def exercice19():
     TTC = HTC / 100 * 20 + HTC
     print(f"Prix TTC = {TTC}")
 
+def exercice20():
+    print("Exercice 20 : Message personnalisé ")
+    nom =input("Comment vous-appelez vous ?")
+    age = int(input("Quel âge avez-vous ?"))
+    print(f"{nom} a {age} ans")
+
+
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "19":
-        exercice19()
+    if choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
