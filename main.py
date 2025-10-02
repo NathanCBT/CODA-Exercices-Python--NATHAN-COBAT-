@@ -156,13 +156,22 @@ def exercice24():
     else :
         print(f"{nombre2} est plus grand que {nombre1}")
 
+def exercice25():
+    print("Exercice 25 : Ordre croissant")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    if nombre1 < nombre2 :
+        print(f"{nombre1} et {nombre2} sont dans l'ordre croissant")
+    else :
+        print(f"{nombre1} et {nombre2} ne sont pas dans l'ordre croissant")    
+
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "24":
-        exercice24()
+    if choix == "25":
+        exercice25()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
