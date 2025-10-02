@@ -30,13 +30,21 @@ def exercice6():
     nombre1 = int(input("Choisir un premier nombre"))
     nombre2 = int(input("Choisir un second nombre"))
     somme = nombre1 - nombre2
-    print(f"{nombre1} + {nombre2} = {somme}")
+    print(f"{nombre1} - {nombre2} = {somme}")
+
+def exercice7():
+    print("Exercice 7 : Multiplication simple")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    somme = nombre1 * nombre2
+    print(f"{nombre1} x {nombre2} = {somme}")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "6":
-        exercice6()
+    if choix == "7":
+        exercice7()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
