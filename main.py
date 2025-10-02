@@ -61,13 +61,18 @@ def exercice10():
     double = nombre * 2 
     print(f"Le double de {nombre} = {double}")
 
+def exercice11():
+    print("Exercice 11 : Moitié d'un nombre ")
+    nombre = int(input("Choisir un nombre"))
+    moitie = nombre / 2 
+    print(f"La moitié de {nombre} = {moitie}")
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "10":
-        exercice10()
+    if choix == "11":
+        exercice11()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
