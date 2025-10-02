@@ -183,11 +183,21 @@ def exercice27():
     else :
         print("Vous êtes dans la catégorie adulte")
 
+def exercice28():
+    print("Exercice 28 : Température de l'eau")
+    temp = int(input("A quelle température est l'eau ?"))
+    if temp <0 :
+        print(f"{temp}° donc l'eau est glacée")
+    elif temp <= 100 : 
+        print(f"{temp}° donc l'eau est liquide")
+    else : 
+        print(f"{temp}° donc l'eau est en ébulition")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "27":
-        exercice27()
+    if choix == "28":
+        exercice28()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
