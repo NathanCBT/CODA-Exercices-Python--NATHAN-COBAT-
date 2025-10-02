@@ -18,12 +18,18 @@ def exercice4():
     age = annee_actuelle - annee_de_naissance
     print(f"Vous avez environ {age} ans")
 
+def exercice5():
+    print("Exercice 5 : Addition simple")
+    nombre1 = int(input("Choisir un premier nombre"))
+    nombre2 = int(input("Choisir un second nombre"))
+    somme = nombre1 + nombre2
+    print(f"{nombre1} + {nombre2} = {somme}")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "4":
-        exercice4()
+    if choix == "5":
+        exercice5()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
