@@ -231,14 +231,18 @@ def exercice33():
     for i in range(1, 11):
         print(f"{table} x {i} = {table * i}")    
     
-        
+def exercice34():
+    print("Exercice 34 : Nombres pairs jusqu'à N") 
+    n = int(input("Jusqu'à quel nombre vous voulez afficher les nombres pairs"))
+    for i in range(0, n+1, 2):
+        print(f"{i}")      
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "33":
-        exercice33()
+    if choix == "34":
+        exercice34()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
