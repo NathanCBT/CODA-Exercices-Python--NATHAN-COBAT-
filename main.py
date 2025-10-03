@@ -216,14 +216,24 @@ def exercice31():
     N = int(input("Depuis quel nombre voulez-vous faire un décompte ? "))
     for i in range(N, -1, -1):
         print(f"{i}")
+
+def exercice32():
+    print("Exercice 32 : Somme jusqu'à N")
+    N = int(input("Choisir un nombre entier"))
+    somme = 0 
+    for i in range(1, N + 1):
+        somme += i 
+        print(f"{somme}")
+        
+    
         
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "31":
-        exercice31()
+    if choix == "32":
+        exercice32()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
