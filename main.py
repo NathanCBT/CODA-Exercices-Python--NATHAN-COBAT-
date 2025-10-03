@@ -244,14 +244,19 @@ def exercice35():
             carre = i**2
             if carre <= n :
                 print(f"{carre}")
-        
+
+def exercice36():
+    print("Exercice 36 : Répéter un mot ")
+    n = int(input("Combien de fois vous voulez répéter salut! ? "))
+    for i in range(n):
+        print("Salut!")       
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "35":
-        exercice35()
+    if choix == "36":
+        exercice36()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
