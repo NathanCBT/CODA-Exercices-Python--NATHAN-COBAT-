@@ -211,13 +211,19 @@ def exercice30():
     for i in range(1, N + 1):
         print(f"{i}")
 
+def exercice31():
+    print("Exercice : Compter à rebours")
+    N = int(input("Depuis quel nombre voulez-vous faire un décompte ? "))
+    for i in range(N, -1, -1):
+        print(f"{i}")
+        
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "30":
-        exercice30()
+    if choix == "31":
+        exercice31()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
