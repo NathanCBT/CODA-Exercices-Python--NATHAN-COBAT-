@@ -256,14 +256,28 @@ def exercice37():
     l = int(input("Choisir la largeur de la base "))
     for i in range(l,0,-1):
         print(" " * (l-i) + "*" * (2*i-1))
-             
 
+def exercice38():
+    print("Exercice 38 : Calculatrice simple")
+    operation = input("Quelle opération souhaitez-vous faire ? ")
+    n1 = int(input("Choisir un premier nombre. "))
+    n2 = int(input("Choisir un second nombre. "))
+    if operation == "+" :
+        print(f"{n1} + {n2} = {n1+n2} ")
+    elif operation == "-" : 
+        print(f"{n1} - {n2} = {n1-n2}")
+    elif operation == "*" :
+        print(f"{n1} x {n2} = {n1*n2}")
+    elif operation == "/" :
+        print(f"{n1} / {n2} = {n1/n2}")
+    else : 
+        print("Choisir une opération parmis celle-si : +, -, x, /")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "37":
-        exercice37()
+    if choix == "38":
+        exercice38()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
