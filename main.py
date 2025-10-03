@@ -235,14 +235,23 @@ def exercice34():
     print("Exercice 34 : Nombres pairs jusqu'à N") 
     n = int(input("Jusqu'à quel nombre vous voulez afficher les nombres pairs"))
     for i in range(0, n+1, 2):
-        print(f"{i}")      
+        print(f"{i}")   
+
+def exercice35():
+    print("Exercice 35 : Carrés parfaits")
+    n = int(input("Jusqu'à quel nombre vous voulez afficher les carrés parfait "))
+    for i in range( 1,n+1):
+            carre = i**2
+            if carre <= n :
+                print(f"{carre}")
+        
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "34":
-        exercice34()
+    if choix == "35":
+        exercice35()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
