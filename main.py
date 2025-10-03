@@ -195,14 +195,14 @@ def exercice28():
 
 def exercice29():
     print("Exercice 29 : Mention au bac ")
-    note = int(input("Quelle note avez-vous obtenue au Bac ? "))
-    if note < 10 :
+    note = float(input("Quelle note avez-vous obtenue au Bac ? "))
+    if 8 <=  note < 10 :
         print(f"Votre note est de {note} vous êtes donc recalé")
-    elif note >= 10 : 
+    elif 10  <=  note  < 14 : 
         print(f"Votre note est de {note} c'est passable")
-    elif note >= 14 : 
+    elif 14 <= note < 16 : 
         print(f"Votre note est de {note} vous avez donc la mention Bien")
-    elif note >= 17 : 
+    else :  
         print(f"Votre note est de {note} vous avez donc la mention Très bien")
 
 
