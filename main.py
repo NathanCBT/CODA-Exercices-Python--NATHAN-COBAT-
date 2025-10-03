@@ -205,14 +205,19 @@ def exercice29():
     else :  
         print(f"Votre note est de {note} vous avez donc la mention Très bien")
 
+def exercice30():
+    print("Exercice 30 : Compter de 1 à n")
+    N = int(input("Jusqu'où vous voulez compter ? "))
+    for i in range(1, N + 1):
+        print(f"{i}")
 
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "29":
-        exercice29()
+    if choix == "30":
+        exercice30()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
