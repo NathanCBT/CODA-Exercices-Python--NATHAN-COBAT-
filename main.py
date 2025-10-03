@@ -249,14 +249,21 @@ def exercice36():
     print("Exercice 36 : Répéter un mot ")
     n = int(input("Combien de fois vous voulez répéter salut! ? "))
     for i in range(n):
-        print("Salut!")       
+        print("Salut!") 
+
+def exercice37():
+    print("Exercice 37 : Pyramide d'étoiles")
+    l = int(input("Choisir la largeur de la base "))
+    for i in range(l,0,-1):
+        print(" " * (l-i) + "*" * (2*i-1))
+             
 
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "36":
-        exercice36()
+    if choix == "37":
+        exercice37()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
