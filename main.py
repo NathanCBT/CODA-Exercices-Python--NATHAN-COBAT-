@@ -224,7 +224,12 @@ def exercice32():
     for i in range(1, N + 1):
         somme += i 
         print(f"{somme}")
-        
+
+def exercice33():
+    print("Exercice 33 : Table de multiplication")
+    table = int(input("Quelle table voulez-vous mutiplier"))
+    for i in range(1, 11):
+        print(f"{table} x {i} = {table * i}")    
     
         
 
@@ -232,8 +237,8 @@ def exercice32():
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "32":
-        exercice32()
+    if choix == "33":
+        exercice33()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
