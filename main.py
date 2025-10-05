@@ -292,14 +292,25 @@ def exercice39():
             print("le nombre est impair vous avez gagné !")
         else : 
             print(" le nombre est pair vous avez perdu !")
+
+def exercice40(): 
+    print("Exercice 40 : Validation de mot de passe")
+    mp = input("Entrer un mot de passe contenant au minimum 6 caractères : ")
+    nb_caracteres = len(mp)
+    if nb_caracteres < 6 :
+        print("Votre mot de passe est trop court")
+    elif not any(c.isdigit()for c in mp) : 
+            print("Votre mot dois contenir un chiffre")
+    else : 
+        print("Valide")
     
     
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "39":
-        exercice39()
+    if choix == "40":
+        exercice40()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
