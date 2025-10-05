@@ -273,11 +273,33 @@ def exercice38():
     else : 
         print("Choisir une opération parmis celle-si : +, -, x, /")
 
+def exercice39():
+    print("Exercice 39 :  Deviner pair/impair")
+    import random 
+    def n():
+        return random.randint(0, 100)
+    nombre = n()
+    ru = input("pair ou impair ? ")
+    if nombre % 2 == 0 :
+        print(f"Le nombre est {nombre}")
+        if ru == "pair":
+            print("le nombre est pair vous avez gagné !")
+        else : 
+            print(" le nombre est impair vous avez perdu !")
+    else :
+        print(f"Le nombre est {nombre}") 
+        if ru == "impair":
+            print("le nombre est impair vous avez gagné !")
+        else : 
+            print(" le nombre est pair vous avez perdu !")
+    
+    
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "38":
-        exercice38()
+    if choix == "39":
+        exercice39()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
